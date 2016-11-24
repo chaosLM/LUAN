@@ -1,0 +1,262 @@
+{
+	"type": [
+    	{"text":"排序","value":"sort","children":[{"text":"升序","value":"asc"},{"text":"降序","value":"desc"}]},
+    	{"text":"单位","value":"unit","children":[{"text":"元","value":"元"},{"text":"千元","value":"千元"},{"text":"万元","value":"万元"},{"text":"个","value":"个"},{"text":"千个","value":"千个"},{"text":"万个","value":"万个"},{"text":"台","value":"台"},{"text":"千台","value":"千台"},{"text":"万台","value":"万台"},{"text":"件","value":"件"},{"text":"千件","value":"千件"},{"text":"万件","value":"万件"},{"text":"%","value":"%"},{"text":"‰","value":"‰"}]},
+    	{"text":"数量级","value":"mnt","children":[{"text":"一","value":"1"},{"text":"千","value":"1000"},{"text":"万","value":"10000"},{"text":"百分比","value":"0.01"},{"text":"千分比","value":"0.001"}]},
+    	{"text":"保留小数位数","value":"fmt","children":[{"text":"不保留小数","value":"###,###"},{"text":"保留一位小数","value":"###,###.#"},{"text":"保留两位小数","value":"###,###.##"}]}
+	],
+	"filter":[
+		{"text":"大于","value":">"},
+		{"text":"小于","value":"<"},
+		{"text":"大于等于","value":">="},
+		{"text":"等于","value":"="},
+		{"text":"小于等于","value":"<="},
+		{"text":"不等于","value":"<>"},
+		{"text":"为空","value":"is null"},
+		{"text":"非空","value":"is not null"}
+	],
+	"params":[
+		{"text":"时间","value":"time"},
+		{"text":"其他维","value":"other"}
+	],
+	"timeFormat":[
+		{"text":"年","value":"yyyy"},
+		{"text":"月","value":"yyyyMM"},
+		{"text":"日","value":"yyyyMMdd"},
+		{"text":"周","value":""},
+		{"text":"季","value":"yyyyQM"}
+	],
+	"img": {
+		"line":[{
+			"index":"01","name":"堆叠区域图", 
+			"type": "line",
+			"imgUrl":"js/chartImg/line/line1.png", 
+			"xValue": false,
+			"defaultconfig": { 
+				"xAxis":{
+					"boundaryGap": false
+				}, 
+				"series": { 
+					"areaStyle": {
+						"normal": {}
+					}
+				}
+			}
+		},{
+			"index": "02",
+			"name": "折线图堆叠", 
+			"type": "line",
+			"imgUrl": "js/chartImg/line/line2.png",
+			"xValue": false, 
+			"defaultconfig": { 
+				"xAxis": {
+					"boundaryGap": false
+				}
+			}
+		},{
+			"index": "03",
+			"name": "气温变化图", 
+			"type": "line",
+			"imgUrl": "js/chartImg/line/line3.png", 
+			"xValue": false,
+			"defaultconfig": {
+				"series": { 
+					"markPoint": {
+		                "data": [
+		                    {"type": "max", "name": "最大值"},
+		                    {"type": "min", "name": "最小值"}
+		                ]
+		            }, 
+		            "markLine": {
+		                "data": [
+		                    {"type": "average", "name": "平均值"}
+		                ]
+		            } 
+				}
+			}
+		},
+		{
+			"index": "04",
+			"name": "气温变化图", 
+			"type": "line",
+			"imgUrl": "js/chartImg/line/line5.png", 
+			"xValue": true,
+			"defaultconfig": {
+				"series": {
+					"smooth": true
+				}
+			
+			}
+		}],
+		"bar":[{
+			"index":"05",
+			"name": "柱状图对比分析", 
+			"type": "bar",
+			"imgUrl": "js/chartImg/bar/bar1.png", 
+			"xValue": false,
+			"defaultconfig": {}
+		},{
+			"index": "06",
+			"name": "蒸发降水对比图", 
+			"type": "bar",
+			"imgUrl":"js/chartImg/bar/bar2.png", 
+			"xValue": false,
+			"defaultconfig": {
+				"series": { 
+					"markPoint": {
+		                "data": [
+		                    {"type": "max", "name": "最大值"},
+		                    {"type": "min", "name": "最小值"}
+		                ]
+		            }, 
+		            "markLine": {
+		                "data": [
+		                    {"type": "average", "name": "平均值"}
+		                ]
+		            } 
+				}
+			}
+		},
+		{
+			"index": "16",
+			"name": "蒸发降水对比图", 
+			"type": "bar",
+			"imgUrl":"js/chartImg/bar/bar4.png", 
+			"xValue": true,
+			"defaultconfig": {
+				"series": { 
+					"stack": "总量" 
+				}
+			}
+		},
+		{
+			"index": "17",
+			"name": "蒸发降水对比图", 
+			"type": "bar",
+			"imgUrl":"js/chartImg/bar/bar5.png", 
+			"xValue": true,
+			"defaultconfig": {}
+		}],
+		"pie":[{
+			"index":"08",
+			"name":"基础饼图", 
+			"type": "pie",
+			"imgUrl": "js/chartImg/pie/pie1.png", 
+			"defaultconfig": {
+				"series": [{ 
+					"roseType": "angle",  
+		            "itemStyle": {
+		                "normal": {
+		                    "color": "#c23531",
+		                    "shadowBlur": 200,
+		                    "shadowColor": "rgba(0, 0, 0, 0.5)"
+		                }
+		            }
+				}]
+			}
+		},{
+			"index":"09",
+			"name":"面包圈图", 
+			"type": "pie",
+			"imgUrl":"js/chartImg/pie/pie2.png", 
+			"defaultconfig": {
+				"series": [{
+					"radius": ["50%", "70%"]
+				}]
+			}
+		},{
+			"index": "10",
+			"name": "南丁格尔玫瑰图", 
+			"type": "pie",
+			"imgUrl": "js/chartImg/pie/pie3.png", 
+			"defaultconfig": {
+				"series": [{
+					"radius": [20, 110],
+					"roseType": "radius",
+					"center": ["25%", 200]
+				},{
+					"radius": [20, 110],
+					"roseType": "radius",
+					"center": ["75%", 200]
+				}]
+			}
+		},{
+			"index": "18",
+			"name": "同心圆图", 
+			"type": "pie",
+			"imgUrl": "js/chartImg/pie/pie4.png", 
+			"defaultconfig": {
+				"series": [{
+					"radius": [0, "45%"], 
+		            "label": {
+		                "normal": {
+		                    "position": "inner"
+		                }
+		            },
+		            "labelLine": {
+		                "normal": {
+		                    "show": false
+		                }
+		            }
+				},{
+					 "radius": ["55%", "70%"]
+				}]
+			}
+		}],
+		"radar":[{
+			"index":"11",
+			"name":"基础雷达图1", 
+			"type": "radar",
+			"imgUrl":"js/chartImg/radar/radar1.png", 
+			"defaultconfig": {
+				"series": [{
+					"tooltip": {
+		                "trigger": "item"
+		            },
+		            "itemStyle": {
+		            	"normal": {
+		            		"areaStyle": {
+		            			"type": "default"
+		            		}
+		            	}
+		            }
+				}]
+			}
+		},{
+			"index":"12",
+			"name":"基础雷达图2", 
+			"type": "radar",
+			"imgUrl":"js/chartImg/radar/radar2.png", 
+			"defaultconfig": {
+			}
+		},{
+			"index":"13",
+			"name":"基础雷达图3", 
+			"type": "radar",
+			"imgUrl":"js/chartImg/radar/radar3.png", 
+			"defaultconfig": {
+				"radar": [{
+					"center": ["25%", "40%"],
+            		"radius": "40%"
+				},{
+					"center": ["70%", "40%"],
+            		"radius": "40%"
+				}]
+			}
+		}],	
+		"map":[{
+			"index":"14",
+			"name":"中国地图", 
+			"type": "map",
+			"imgUrl":"js/chartImg/map/map1.png", 
+			"defaultconfig": {}
+		}],
+		"gauge":[{
+			"index":"15",
+			"name":"仪表盘", 
+			"type": "gauge",
+			"imgUrl":"js/chartImg/gauge/gauge1.png", 
+			"defaultconfig": {}
+		}]
+	}
+}

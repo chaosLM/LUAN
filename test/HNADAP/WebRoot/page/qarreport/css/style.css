@@ -1,0 +1,340 @@
+/* 
+* @Author: 德龙
+* @Date:   2016-10-14 10:03:24
+* @Last Modified by:   德龙
+* @Last Modified time: 2016-11-11 17:28:27
+*/
+
+@charset "UTF-8";
+
+html{
+	overflow: auto;
+	width: 919px;
+	height: 100%;
+}
+.warpper{
+	width:100%;
+	position: relative;
+}
+.warning-header{
+	height: 62px;
+	line-height: 62px;	
+	margin-top: 10px;
+	margin-left: 40px;
+	margin-right: 40px;
+	border-bottom: 1px solid #EAEAEA;
+
+}
+.warning-header-logo{
+	display: inline-block;
+	width: 70px;
+	height: 62px;
+	float: left;
+}
+.warning-header-logo-hnAirlines{
+	background:url(../images/warning-header-logo-hnAirlines.png) no-repeat;
+	background-position: 0px 0px;
+} 
+.warning-header-logo-tjAirlines{
+	background:url(../images/warning-header-logo-tjAirlines.png) no-repeat;
+	background-position: 0px 0px;
+} 
+.warning-header-logo-bjAirlines{
+	background:url(../images/warning-header-logo-bjAirlines.png) no-repeat;
+	background-position: 0px 0px;
+}
+.warning-header-message{
+	float: right;
+	margin-right: 0px;
+	padding-top: 10px;
+	font-size: 12px;
+}
+.warning-header-message .rules{
+	margin:0 10px;
+}
+.warning-header h2{
+	display: inline-block;
+	float: left;
+	font-size: 22px;
+	font-weight: bold;
+	
+}
+.warning-content{
+	margin:5px 20px 10px 20px;
+}
+.warning-foot{
+	margin:10px 20px 5px;
+	padding-top: 10px;
+	// padding-bottom: 10px;
+	font-size: 12px;
+	color: #999999;
+	border-top: 1px solid #C4C4C4;
+	border-bottom: 1px solid #E0E0E0;
+}
+.warning-foot .hr{
+	height: 1px;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	border-bottom:1px solid #CACACA;
+	background:#CACACA;
+}
+.warning-foot .foot-copyright{
+	position: relative;
+	text-align: center;
+}
+.warning-foot .copyright{
+	-webkit-text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+	-moz-text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+	-ms-text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+	text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+}
+.warning-foot .chart-today{
+	position: absolute;
+	margin-left: 200px;
+}
+/*
+*
+* 飞行员警告次数排名
+*/ 
+.warning-control{
+	margin-bottom: 10px;
+}
+.warning-control h3{
+	height:52px;
+	line-height: 52px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding-left: 80px;
+	background: url(../images/warning-pilot-h3-bg.png) no-repeat;
+}
+.warning-table{
+	margin-top: 15px;
+	margin-left: 25px;
+}
+.warning-table table{
+	border:none;
+}
+.warning-table .table-head-height{
+	height: 33px;
+	height: 23px\0; /*IE8下*/
+}
+.warning-table .table-head th{
+	color:#ffffff;
+	font-size: 14px;
+}
+.warning-table th, td{
+	text-align: center;
+}
+.warning-table .table-head  .dark-blue >div{
+	height: 60px;
+	line-height: 85px;
+	letter-spacing: 2px;
+}
+.warning-table .table-head .dark-blue:nth-child(2){
+	border-right:1px solid #002F97;
+}
+.warning-table .table-head>th.border-R{
+	border-right: 1px solid #C6D6ED;
+}
+.warning-table .table-head .pilot-name{
+	background:#002F97 url(../images/pilot-name.png) no-repeat 45% 5%;
+}
+.warning-table .table-head .pilot-team{
+	background:#002F97 url(../images/pilot-team.png) no-repeat 45% 5%;
+}
+.warning-table .table-head .blue{
+	background:#ffffff url(../images/warning-pilot-blue-bg.png) no-repeat -5px -4px;
+	background-size: 270px 35px;
+}
+.warning-table .table-head .bg-left{
+	background-position: -4px -4px;
+}
+.warning-table tbody  td.border-right{
+	border-right: 2px solid #ffffff;
+	overflow: hidden;
+	display: inline-block;
+	width: 120px;
+	height: 25px;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.warning-table .gray{
+	background: #F3F3F3;
+}
+.warning-table th.light-blue{
+	background:#155FB8;
+	cursor: pointer;
+}
+ .warning-table  th.sort-up{
+ 	background:#155FB8 url(../images/sortVal_up.png) no-repeat 60px 14px;
+ } 
+.warning-table  th.sort-down{
+	background:#155FB8 url(../images/sortVal_down.png) no-repeat 60px 14px;
+}
+.warning-table tbody>tr{
+	height:25px;
+}
+.warning-table tbody tr.side-on td{
+	background:#C8E2FB;
+}
+.warning-table tbody tr:hover td{
+	background:#E5F0FA !important;
+}
+.warning-table tbody>tr>td{
+	font-size: 13px;
+	color:black;
+}
+.warning-table tbody>tr>td.border-color-blue{
+	border-right:1px solid #BFCBE5;
+}
+.warning-table tbody >tr .red{
+	color: #E60115;
+}
+
+.warning-table table tr .border-color-darkBlue{
+	border-right: 1px solid #7C93C7;
+}
+.warning-table .table-head-height>th:last-child{
+	border-right:1px solid #155FB8;
+}
+.warning-table tbody tr.last-child>td{
+	border-bottom: 1px solid #8097CB;
+}
+.warning-table tbody tr.last-child>.gray{
+	border-bottom: none;
+}
+
+/**分页**/
+.warning-control tfoot .fenye{
+	margin-top: 10px;
+    float: right;
+}
+
+/*
+*
+* 触发警告次数趋势分析
+*/ 
+.warning-times h3{
+	height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+	background:url(../images/warning-times-h3-bg.png) no-repeat;
+}
+.warning-times h3>img{
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-left: 15px;
+}
+.warning-times h3>span{
+	display: inline-block;
+	padding-left: 45px;
+}
+.warning-times h3>span .alert-fleet-name{
+	font-weight: bold;
+}
+.warning-times h3>span .alert-airport-name{
+	font-weight: bold;
+}
+.warning-times i.alert-pilot-name{
+	font-weight: bold;
+	display: inline-block;
+    width: 60px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    cursor: pointer;
+}
+/*
+*
+* 触发警告千次率趋势分析
+*/ 
+.warning-rate{
+	margin:15px 0;
+}
+.warning-rate h3{
+	height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+	background:url(../images/warning-rate-h3-bg.png) no-repeat;
+}
+.warning-rate h3>img{
+	isplay: inline-block;
+	float: left;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-left: 15px;
+}
+.warning-rate h3>span{
+	display: inline-block;
+	padding-left: 45px;
+}
+.warning-rate h3>span .alert-fleet-name{
+	font-weight: bold;
+}
+.warning-rate h3>span .alert-airport-name{
+	font-weight: bold;
+}
+.warning-rate i.alert-pilot-name{
+	font-weight: bold;
+	display: inline-block;
+    width: 60px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    cursor: pointer;
+}
+/*
+*
+* 警告事件构成分析
+*/ 
+.warning-event h3{
+	height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+	background:url(../images/warning-rate-h3-bg.png) no-repeat;
+}
+.warning-event h3>img{
+	isplay: inline-block;
+	float: left;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-left: 15px;
+}
+.warning-event h3>span{
+	display: inline-block;
+	padding-left: 45px;
+}
+.warning-event h3>span .alert-fleet-name{
+	font-weight: bold;
+}
+.warning-event h3>span .alert-airport-name{
+	font-weight: bold;
+}
+.warning-event i.alert-pilot-name{
+	font-weight: bold;
+	display: inline-block;
+    width: 60px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    cursor: pointer;
+}
+
+/* 
+*	
+ */
+.warning-content  b.chart-alertId{
+	font-weight: bold;
+}

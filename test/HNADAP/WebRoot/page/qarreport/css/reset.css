@@ -1,0 +1,82 @@
+@charset "UTF-8";
+body, html, ul, li, h1, h2, h3, h4, h5, h6, p, a, input, select, dl, dt, dd, textarea, label, pre, table, span, em, b, i, strong {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #fff;
+  color: #000000;
+  font-size: 14px;
+  font-family: "微软雅黑", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+em, strong, b, i, label {
+  font-style: normal;
+  font-weight: normal;
+}
+
+img {
+  border: none;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+input, textarea, select, button {
+  font: 14px "微软雅黑",sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.nec, .nec:before, .nec:after {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.etc, .etc:before, .etc:after, div:before, div:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+

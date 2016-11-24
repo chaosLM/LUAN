@@ -1,0 +1,230 @@
+/* 
+* @Author: chaos
+* @Date:   2016-11-12 10:03:24
+* @Last Modified by: 
+* @Last Modified time: 
+*/
+@charset "UTF-8";
+
+html {
+	overflow: auto;
+	width: 1360px;/* 919px; */
+	height: 100%;
+}
+.warpper{
+	width:100%;
+	position:relative;
+}
+.warning-header{
+	height:62px;
+	line-height:62px;
+	margin-top:10px;
+	margin-left:40px;
+	margin-right:40px;
+	border-bottom:1px solid #EAEAEA;
+}
+.warning-header-logo{
+	display:inline-block;
+	width:70px;
+	height:62px;
+	float:left;
+}
+.warning-header-logo-hnAirlines{
+	background:url(../images/warning-header-logo-hnAirlines.png) no-repeat;
+	background-position: 0px 0px;
+} 
+.warning-header-logo-tjAirlines{
+	background:url(../images/warning-header-logo-tjAirlines.png) no-repeat;
+	background-position: 0px 0px;
+} 
+.warning-header-logo-bjAirlines{
+	background:url(../images/warning-header-logo-bjAirlines.png) no-repeat;
+	background-position: 0px 0px;
+}
+.warning-header h2{
+	display:inline-block;
+	float:left;
+	font-size:22px;
+	font-weight:bold;
+}
+.warning-header-message{
+	float:right;
+	margin-right:0px;
+	padding-top:10px;
+	font-size:12px;
+}
+.warning-header-message .rules{
+	margin:0px 10px;
+}
+.warning-content{
+	margin:5px 20px 10px 20px;
+}
+.warning-foot{
+	margin:10px 20px 5px;
+	padding-top:10px;
+	font-size:12px;
+	color:#999999;
+	border-top:1px solid #C4C4C4;
+	border-bottom:1px solid #E0E0E0;
+}
+.warning-foot .hr{
+	height:1px;
+	margin-top:10px;
+	margin-bottom:2px;
+	border-bottom:1px solid #C4C4C4;
+	background:#C4C4C4;
+}
+.warning-foot .foot-copyright{
+	position: relative;
+	text-align: center;
+}
+.warning-foot .copyright{
+	-webkit-text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+	-moz-text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+	-ms-text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+	text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+}
+.warning-foot .chart-today{
+	position: absolute;
+	margin-left: 400px;
+}
+
+/* 清除浮动 */
+.clearfix{
+	clear:both;
+}
+
+/* 发送方式 */
+.send-mode{
+	position:absolute;
+	margin-left:1150px;
+	margin-top:-32px;
+	padding:5px 10px;
+	background-color:#5FCFA9;
+	border-radius:10px;
+}
+.send-mode div{
+	display:inline-block;
+	margin:0 5px;
+}
+
+/* 表格  */
+.warning-table table{
+	border:none;
+	text-align: center;
+	width:100%;
+	margin-top:34px;
+}
+.warning-table .table-head-height{
+	height:33px;
+	height:23px\0; /*IE8下*/
+}
+.warning-table table th{
+	font-size:13px;
+}
+.warning-table .table-head-blue{
+	color:#fff;
+	font-size:13px;
+	background-color:#2CA6E0;
+	height:32px;
+}
+.warning-table .table-head-green{
+	color:#fff;
+	background-color:#29B173;
+}
+.warning-table .table-head-gray{
+	color:#999999;
+	font-size:13px;
+	background-color:#F2F2F2;
+	height:26px;
+	border-bottom:2px solid #999999;
+}
+.warning-table thead tr:nth-child(1) th{
+	border-radius:10px 10px 0 0;
+}
+.warning-table thead tr:nth-child(2) th:nth-child(1),
+.warning-table thead tr:nth-child(2) th:nth-child(10),
+.warning-table thead tr:nth-child(2) th:nth-child(16),
+.warning-table thead tr:nth-child(2) th:nth-child(18),
+.warning-table tbody tr td:nth-child(1),
+.warning-table tbody tr td:nth-child(10),
+.warning-table tbody tr td:nth-child(16),
+.warning-table tbody tr td:nth-child(18),
+.warning-table .table-right-blue{
+	border-right:1px solid #BECCE6;
+}
+.warning-table tbody tr{
+	border-bottom:1px solid #999999;
+	height:30px;
+}
+.warning-table tbody td{
+	font-size:12px;
+}
+.warning-table tbody tr td:nth-child(2),
+.warning-table tbody tr td:nth-child(11){
+	color:#026EB7;
+	font-weight:bold;
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+/**分页**/
+.warning-control tfoot .fenye{
+	margin-top: 10px;
+    float: right;
+    width:340px;
+    height:30px;
+    background:url(../images/fenye.png) no-repeat;
+    background-position: 0px 0px;
+}
+
+/* dialog */
+.mask{
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:rgba(127,127,127,.5);
+	top:0;
+	z-index: 1;
+	visibility: hidden;
+}
+#dialog{
+	width:400px;
+	background-color:#fff;
+	visibility: visible;
+}
+#dialog .decoding-data{
+	background-color:#fff;
+	text-align: center;
+}
+#dialog .decoding-data div{
+	background-color:#2F1578;
+	border-radius:10px;
+	color:#fff;
+	width:120px;
+	padding:5px;
+	margin:20px auto;
+}
+/* 覆盖jquery-ui */
+.ui-state-active{
+	background-color:#37A6DD;
+	border: 1px solid #37A6DD;
+	color: #ffffff;
+}
+.ui-state-default{
+	background-color:#37A6DD;
+	border: 1px solid #37A6DD;
+	color: #ffffff;
+}
+.ui-icon-triangle-1-e{
+	background-position: -17px -129px;
+}
+.ui-icon-triangle-1-s{
+	background-position: -49px -129px;
+}
+.ui-state-default .ui-icon{
+	background-image: url("../../../css/images/ui-icons_ffffff_256x240.png");
+}
+.ui-accordion .ui-accordion-content{
+	padding:0;
+}

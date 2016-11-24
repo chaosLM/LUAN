@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="HNADAP"
+  id="myeclipse.1479187021950"
+  context-root="/HNADAP"
+  j2ee-spec="6.0"
+  archive="HNADAP.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/page/qarreport/js/plugins/jquery-1.10.1.min.js,WebRoot/js/core/sea.js,WebRoot/js/core/jquery-1.7.2.min.js,WebRoot/page/qarreport/js/plugins/echarts.common.min.js
+validator.Revalidate=true
+validator.Unchecked=

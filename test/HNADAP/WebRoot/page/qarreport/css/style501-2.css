@@ -1,0 +1,208 @@
+/* 
+* @Author: chaos
+* @Date:   2016-11-12 10:03:24
+* @Last Modified by: 
+* @Last Modified time: 
+*/
+@charset "UTF-8";
+
+html {
+	overflow: auto;
+	width: 919px;
+	height: 100%;
+}
+.warpper{
+	width:100%;
+	position:relative;
+}
+.warning-header{
+	height:62px;
+	line-height:62px;
+	margin-top:10px;
+	margin-left:40px;
+	margin-right:40px;
+	border-bottom:1px solid #EAEAEA;
+}
+.warning-header-logo{
+	display:inline-block;
+	width:70px;
+	height:62px;
+	float:left;
+}
+.warning-header-logo-hnAirlines{
+	background:url(../images/warning-header-logo-hnAirlines.png) no-repeat;
+	background-position: 0px 0px;
+} 
+.warning-header-logo-tjAirlines{
+	background:url(../images/warning-header-logo-tjAirlines.png) no-repeat;
+	background-position: 0px 0px;
+} 
+.warning-header-logo-bjAirlines{
+	background:url(../images/warning-header-logo-bjAirlines.png) no-repeat;
+	background-position: 0px 0px;
+}
+.warning-header h2{
+	display:inline-block;
+	float:left;
+	font-size:22px;
+	font-weight:bold;
+}
+.warning-header-message{
+	float:right;
+	margin-right:0px;
+	padding-top:10px;
+	font-size:12px;
+}
+.warning-header-message .rules{
+	margin:0px 10px;
+}
+.warning-content{
+	margin:5px 20px 10px 20px;
+	position:relative;
+}
+.warning-foot{
+	margin:10px 20px 5px;
+	padding-top:10px;
+	font-size:12px;
+	color:#999999;
+	border-top:1px solid #C4C4C4;
+	border-bottom:1px solid #E0E0E0;
+}
+.warning-foot .hr{
+	height:1px;
+	margin-top:10px;
+	margin-bottom:2px;
+	border-bottom:1px solid #C4C4C4;
+	background:#C4C4C4;
+}
+.warning-foot .foot-copyright{
+	position: relative;
+	text-align: center;
+}
+.warning-foot .copyright{
+	-webkit-text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+	-moz-text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+	-ms-text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+	text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(153, 153, 153) 0px 0px 0px;
+}
+.warning-foot .chart-today{
+	position: absolute;
+	margin-left: 180px;
+}
+
+/* 指标表 */
+.warning-index{
+	width:50%;
+	padding:10px 35px;
+	float:left;
+}
+.warning-index .index-bg{
+	position:relative;
+	width:380px;
+	height:150px;
+	margin:40px 10px;
+	background:url(../images/warning-index-planetype.png) no-repeat;
+	background-size:100%;
+	background-position:0px 0px;
+}
+.warning-index .index-bg div:nth-child(odd){
+	position:absolute;
+	width:60px;
+	font-size:12px;
+	color:#939393;
+}
+.warning-index .index-bg div:nth-child(even){
+	position:absolute;
+	width:100px;
+	text-align:right;
+	font-weight:bold;
+	font-size:20px;
+}
+.warning-index .index-name-1{
+	left:54px;
+	top:18px;
+}
+.warning-index .index-val-1{
+	left:80px;
+	top:15px;
+	color:#FABF3D;
+}
+.warning-index .index-name-2{
+	left:54px;
+	top:114px;
+}
+.warning-index .index-val-2{
+	left:80px;
+	top:110px;
+	color:#36A6DD;
+}
+.warning-index .index-name-3{
+	left:300px;
+	top:60px;
+}
+.warning-index .index-val-3{
+	left:246px;
+	top:90px;
+	color:#6BBB5A;
+}
+
+/* 饼图
+ */
+.warning-times{
+	width:380px;
+	float:right;
+	margin:20px 40px 0px 0px;
+	position:relative;
+}
+.warning-times>h3:nth-child(1){
+	border-bottom:24px solid #F3F3F3;
+	border-right:24px solid transparent;
+	width:180px;
+}
+.warning-times>h3:nth-child(2){
+	position:absolute;
+	top:3px;
+	left:10px;
+	z-index:1;
+	color:#939393;
+	font-size:16px;
+	font-weight:bold;
+}
+/* 折线图 */
+.warning-times-linechart{
+	margin:0 40px;
+	/* clear:both; */
+	position:relative;
+}
+.warning-times-linechart>h3:nth-child(1){
+	border-bottom:24px solid #1778A3;
+	border-right:24px solid transparent;
+	width:180px;
+}
+.warning-times-linechart>h3:nth-child(2){
+	border-bottom:24px solid #FFFFFF;
+	border-right:24px solid transparent;
+	width:178px;
+	position:absolute;
+	top:1px;
+	left:1px;
+	z-index:1;
+}
+.warning-times-linechart>h3:nth-child(3){
+	position:absolute;
+	top:3px;
+	left:20px;
+	z-index:2;
+	color:#939393;
+	font-size:16px;
+	font-weight:bold;
+}
+.warning-times-linechart .border-line{
+	border:1px solid #1778A3;
+	padding:5px 0 0 0;
+}
+
+/* 清除浮动 */
+.clearfix{
+	clear:both;
+}
