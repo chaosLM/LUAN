@@ -13,29 +13,17 @@
 					<key>url</key>
 					<string>http://192.168.4.74:8080/HNADAP/download/SEMP_ios.ipa</string>
 				</dict>
-				<dict>
-					<key>kind</key>
-					<string>display-image</string>
-					<key>url</key>
-					<string>http://semp.datacvg.com/mobile/image57x57.jpg</string>
-				</dict>
-				<dict>
-					<key>kind</key>
-					<string>full-size-image</string>
-					<key>url</key>
-					<string>http://semp.datacvg.com/mobile/image512x512.jpg</string>
-				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.datacvg.SEMPMobile</string>
+				<string>com.datacvg.yinshang</string>
 				<key>bundle-version</key>
-				<string>1.0</string>
+				<string>3.3</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>SEMPMobile</string>
+				<string>商联移动BI</string>
 			</dict>
 		</dict>
 	</array>
